@@ -1,0 +1,195 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:wght@100&display=swap');
+
+/* Common parts of page*/
+
+html, body{
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+	font-family: 'Montserrat'f;
+    display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+.sides {
+	height: 100vh;
+	width: 50vw;
+}
+
+/* Left part of page*/
+
+#leftside {
+	background-color: #FFFFFF;
+	display: flex;
+	flex-direction: column;
+}
+
+.left {
+	padding: 10px;
+	margin-top: 10%;
+	align-self: center;
+	flex: 1;
+	display: flex;
+	text-align: center;
+}
+
+.content {
+	text-align: center;
+	padding: 5px;
+}
+
+#text1 {
+	color: #77838F;
+	font-weight: 600;
+	letter-spacing: 4px;
+	font-size: 19px;
+}
+
+#text2 {
+	color: #5E5C5D;
+	font-weight: 800;
+	font-size: 39px;
+}
+
+#text3 {
+	color: #C5C5C5;
+	font-size: 25px;
+}
+
+#mail {
+	display: flex;
+}
+
+#button {
+	color: white;
+	background: #7A62F1 0% 0% no-repeat padding-box;
+	border: 1px solid #7A62F1;
+	border-radius: 0px 6px 6px 0px;
+	text-align: left;
+	height: 60px;
+	width: 11vw;
+	padding: 13px 25px;
+}
+
+#mailadress {
+	color: #A4A4A5;
+	background: #FFFFFF 0% 0% no-repeat padding-box;
+	border: 1px solid #C5C5C5;
+	border-radius: 6px 0px 0px 6px;
+	text-align: left;
+	height: 56px;
+	width: 20vw;
+}
+
+#footer {
+	align-self: end;
+	align-self: center;
+	text-align: center;
+	padding-bottom: 20px;
+	color: #7A62F1;
+	font-size: 25px;
+}
+
+/* Right part of page*/
+
+#rightside {
+	background-color: rgba(122, 98, 241, 0.48);
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+}
+
+.right > p {
+	font-size: 50px;
+	font-weight: 800;
+}
+
+.right {
+	height: 90px;
+	width: 65px;
+	display: flex;
+	flex-wrap: wrap;
+    padding: 25px;
+	margin-top: 10%;
+	color: #FFFFFF;
+}
+
+.right > br {
+	display: block;
+	content: "";
+	margin-top: 0;
+}
+
+@media (orientation: portrait) {
+
+	.container {
+		display: block;
+	}
+
+	.sides {
+		height: 100vh;
+		width: 100vw;
+	}
+}
+
+@media screen and (max-width: 1280px) {
+	#carpic {
+		width: 345px;
+		height: 150px;
+	}
+	.time {
+		font-size: smaller;
+	}
+}
+
+@media (max-width: 820px) and (orientation: portrait){
+	#button {
+		font-size: 14px;
+		width: 27vw;
+	}
+	#mailadress {
+		width: 36vw;
+	}
+}
+
+@media screen and (max-width: 281px) {
+		#logopic {
+		width: 200px;
+		height: 100px;
+	}
+	#carpic {
+		width: 200px;
+		height: 100px;
+	}
+	#button {
+		font-size: 12px;
+		width: 30vw;
+	}
+	#mailadress {
+		width: 48vw;
+	}
+}
